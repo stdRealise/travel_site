@@ -16,6 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('tour_id');
             $table->date('start_date');
             $table->date('end_date');
+            $table->timestamps();
 
             $table->foreign('tour_id')->references('id')->on('tours');
         });

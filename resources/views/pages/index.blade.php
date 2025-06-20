@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <a href="{{ route('tours.index') }}">Туры</a>
+    <a href="{{ route('directions.index') }}" class="btn btn-main">Направления</a>
+    <a href="{{ route('tours.index') }}" class="btn btn-main">Туры</a>
     <div class="container">
         <div class="screen-block block-1">
             <img class="wide-img" src="/images/towers.png" alt="towers" />

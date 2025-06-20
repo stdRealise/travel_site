@@ -2,10 +2,12 @@ body {
     background-color: #effeff;
     color: #29888d;
     margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 header, footer {
     background-color: #d0e7ea;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .container {
@@ -18,20 +20,7 @@ header, footer {
 }
 
 a {
-    color: #a0eaee;
-    font-size: 25px;
-    padding: 10px;
-    background: rgb(0,76,149);
-    background: linear-gradient(90deg, rgba(0,76,149,1) 0%, rgba(28,85,193,1) 37%, rgba(0,230,187,1) 100%);
-    border-radius: 15px;
     text-decoration: none;
-    display: block;
-    
-    &:hover {
-        color: #cbfcff;
-        background: rgb(13,109,201);
-        background: linear-gradient(90deg, rgba(13,109,201,1) 0%, rgba(54,122,250,1) 37%, rgba(25,255,212,1) 100%);
-    }        
 }
 
 .article {
@@ -58,7 +47,7 @@ a {
     .main-title {
         color: rgb(97, 75, 172);
     }
-} 
+}
 
 .block-text {
     padding: 10px;
@@ -90,3 +79,129 @@ a {
         }
     }
 }
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    background-color: #ffffff;
+    border: 1px solid #c6dee0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    margin-bottom: 2rem;
+}
+
+.table thead {
+    background-color: #b7dde2;
+    color: #206265;
+}
+
+.table thead th {
+    padding: 12px 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-right: 1px solid #a8cfd2;
+}
+
+.table thead th:last-child {
+    border-right: none;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f3fefe;
+}
+
+.table tbody tr:hover {
+    background-color: #dff4f4;
+}
+
+.table td {
+    padding: 12px 16px;
+    border-top: 1px solid #e1f1f1;
+    color: #29888d;
+}
+
+.table a.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #fff
+}
+
+.alert {
+    color: rgb(184, 73, 61);
+    background: rgb(226, 188, 184);
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    color: #a0eaee;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn-main {
+    background: linear-gradient(90deg, rgba(0,76,149,1) 0%, rgba(28,85,193,1) 37%, rgba(0,230,187,1) 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        color: #cbfcff;
+        background: linear-gradient(90deg, rgba(13,109,201,1) 0%, rgba(54,122,250,1) 37%, rgba(25,255,212,1) 100%);
+    }
+}
+
+.btn-del {
+    background: linear-gradient(90deg, #a00 0%, #e60000 37%, #ff4f4f 100%);
+    color: #ffffff;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        background: linear-gradient(90deg, #850000 0%, #cc0000 37%, #ff2e2e 100%);
+        color: #fff3f3;
+    }
+}
+
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    list-style: none;
+}
+
+.breadcrumb-item {
+    font-size: 16px;
+    color: #29888d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    padding: 0 8px;
+    color: #88b7bb;
+}
+
+.breadcrumb-item a {
+    color: #29888d;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #50a1a5;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+

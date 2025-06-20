@@ -2,11 +2,11 @@
 @section('content')
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item">Список туров</li>
+            <li class="breadcrumb-item">Список направлений</li>
         </ol>
     </nav>
 
-    <a href="{{ route('tours.create') }}" class="btn btn-main">Добавить</a>
+    <a href="{{ route('directions.create') }}" class="btn btn-main">Добавить</a>
     <table class="table">
         <thead>
             <tr>
@@ -16,13 +16,13 @@
             </tr>
         </thead>
         <tbody>
-            @foreach($tours as $tour)
+            @foreach($directions as $direction)
                 <tr>
-                    <td>{{ $tour->id }}</td>
+                    <td>{{ $direction->id }}</td>
                     <td>
-                        <a href="{{ route('tours.show', $tour) }}" class="btn btn-main">{{ $tour->name }}</a>
+                        <a href="{{ route('directions.show', $direction) }}" class="btn btn-main">{{ $direction->name }}</a>
                     </td>
-                    <td>{{ $tour->description }}</td>
+                    <td>{{ $direction->description }}</td>
                 </tr>
             @endforeach
         </tbody>

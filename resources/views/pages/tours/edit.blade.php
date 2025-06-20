@@ -1,5 +1,12 @@
 @extends('layouts.app')
 @section('content')
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ route('tours.index') }}">Список туров</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('tours.show', $tour) }}">{{ $tour->name }}</a></li>
+        </ol>
+    </nav>
+
     <form action="{{ route('tours.update', $tour) }}" method="POST">
         @csrf
         @method('put')
@@ -37,6 +44,6 @@
                 'value' => $tour->price,
             ])
         </div>
-        <input type="submit" class="btn btn-success" value="Добавить">
+        <input type="submit" class="btn btn-main" value="Добавить">
     </form>
 @endsection

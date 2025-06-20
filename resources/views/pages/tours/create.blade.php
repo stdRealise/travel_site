@@ -1,5 +1,11 @@
 @extends('layouts.app')
 @section('content')
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ route('tours.index') }}">Список туров</a></li>
+        </ol>
+    </nav>
+
     <form action="{{ route('tours.store') }}" method="POST">
         @csrf
         <h1>Добавление нового тура</h1>
@@ -36,6 +42,6 @@
             ])
         </div>
 
-        <input type="submit" class="btn btn-success" value="Добавить">
+        <input type="submit" class="btn btn-main" value="Добавить">
     </form>
 @endsection

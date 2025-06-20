@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\IndexController;
 use App\Http\Controllers\TourController;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\DirectionController;
 
 Route::get('/', [IndexController::class, 'index']);
 
@@ -20,3 +21,5 @@ Route::put('/tours/{tour}', [TourController::class, 'update'])
     ->name('tours.update');
 Route::delete('/tours/{tour}', [TourController::class, 'destroy'])
     ->name('tours.destroy');
+
+Route::resource('directions', DirectionController::class);
