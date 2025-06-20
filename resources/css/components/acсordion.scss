@@ -1,0 +1,25 @@
+.accordion {
+    font-size: 25px;
+    box-shadow: 0px 4px 8px rgba(23, 23, 23, 0.2);
+    margin-bottom: 10px;
+    .item-content, .item-title {
+        padding: 10px;
+    }
+
+    .item-title {
+        color: rgb(32, 58, 151);
+        border: 1px solid rgb(79, 113, 102);
+        background-color: rgb(159, 199, 186);
+        cursor: pointer;
+    }
+
+    .item-content {
+        color: rgb(23, 77, 128);
+        border: 1px solid grey;
+        background-color: rgb(213, 234, 227);
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}

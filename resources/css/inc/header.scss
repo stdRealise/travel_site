@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        .logo {
+            width: 200px;
+            @media (max-width: 768px) {
+                width: 130px;
+            }
+        }
+
+        .header-name {
+            font-size: 45px;
+            color: #2ea6ac;
+            @media (max-width: 768px) {
+                font-size: 35px;
+            }
+        }
+
+        
+    }
+
+    .header-links {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .account {
+        color: #2ea6ac;
+        font-size: 25px;
+        padding: 10px;
+    }
+}

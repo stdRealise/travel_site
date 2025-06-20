@@ -1,0 +1,29 @@
+.tabs {
+    font-size: 25px;
+    box-shadow: 0px 4px 8px rgba(23, 23, 23, 0.2);
+    .tabs-header {
+        padding: 10px;
+        border: 1px solid rgb(79, 113, 102);
+        background-color: rgb(159, 199, 186);
+        button {
+            background-color: rgb(213, 234, 227);
+            cursor: pointer;
+            &:hover {
+                background-color: rgb(160, 181, 174);
+            }
+        }
+    }
+
+    .tabs-body {
+        color: rgb(36, 60, 131);
+        border: 1px solid rgb(79, 113, 102);
+        background-color: rgb(213, 234, 227);
+        padding: 10px;
+        div {
+            display: none;
+        }
+        #tab1 {
+            display: contents;
+        }
+    }
+}
