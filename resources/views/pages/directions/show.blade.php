@@ -6,14 +6,13 @@
         </ol>
     </nav>
 
-    <a href="{{ route('directions.index') }}">Список направлений</a>
     <h1>Направление {{ $direction->name }}</h1>
     <div>
-        <a href="{{ route('directions.edit', $direction) }}">Изменить</a>
+        <a href="{{ route('directions.edit', $direction) }}" class="btn btn-main">Изменить</a>
         <form action="{{ route('directions.destroy', $direction)}}" method="POST">
             @method('delete')
             @csrf
-            <input type="submit" value="Удалить">
+            <input type="submit" value="Удалить" class="btn btn-del">
         </form>
     </div>
     <div>

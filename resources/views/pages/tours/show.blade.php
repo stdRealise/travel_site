@@ -6,14 +6,13 @@
         </ol>
     </nav>
 
-    <a href="{{ route('tours.index') }}">Список туров</a>
     <h1>Тур {{ $tour->name }}</h1>
     <div>
-        <a href="{{ route('tours.edit', $tour) }}">Изменить</a>
+        <a href="{{ route('tours.edit', $tour) }}" class="btn btn-main">Изменить</a>
         <form action="{{ route('tours.destroy', $tour)}}" method="POST">
             @method('delete')
             @csrf
-            <input type="submit" value="Удалить">
+            <input type="submit" value="Удалить" class="btn btn-del">
         </form>
     </div>
     <div>

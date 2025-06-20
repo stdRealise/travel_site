@@ -46,7 +46,7 @@ class TourController extends Controller
         return redirect(route('tours.show', $tour));
     }
 
-    public function destoy(Tour $tour) {
+    public function destroy(Tour $tour) {
         $tour->deleteOrFail();
         return redirect(route('tours.index'));
     }

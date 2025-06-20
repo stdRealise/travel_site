@@ -46,7 +46,7 @@ class DirectionController extends Controller
         return redirect(route('directions.show', $direction));
     }
 
-    public function destoy(Direction $direction) {
+    public function destroy(Direction $direction) {
         $direction->deleteOrFail();
         return redirect(route('directions.index'));
     }
