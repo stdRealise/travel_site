@@ -29,7 +29,6 @@
                 'name' => 'direction_id',
                 'label' => 'ID направления',
                 'value' => $tour->direction_id,
-                'disabled' => true,
             ])
 
             @include('components.form.fields.input', [

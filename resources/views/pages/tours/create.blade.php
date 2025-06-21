@@ -25,7 +25,7 @@
 
             @include('components.form.fields.input', [
                 'name' => 'direction_id',
-                'label' => 'ID направления',
+                'label' => 'Направление',
                 'value' => '',
             ])
 

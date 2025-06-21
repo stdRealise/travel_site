@@ -17,7 +17,7 @@
     </div>
     <div>
         <div>Описание {{ $tour->description }}</div>
-        <div>ID направления {{ $tour->direction_id }}</div>
+        <div>Направление {{ $tour->direction->name }}</div>
         <div>Тип {{ $tour->type }}</div>
         <div>Цена {{ $tour->price }}</div>
     </div>

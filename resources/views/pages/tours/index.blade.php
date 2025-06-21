@@ -13,7 +13,7 @@
                 <th scope="col">Id</th>
                 <th scope="col">Название</th>
                 <th scope="col">Описание</th>
-                <th scope="col">ID направления</th>
+                <th scope="col">Направление</th>
                 <th scope="col">Тип</th>
                 <th scope="col">Цена</th>
             </tr>
@@ -26,7 +26,7 @@
                         <a href="{{ route('tours.show', $tour) }}" class="btn btn-main">{{ $tour->name }}</a>
                     </td>
                     <td>{{ $tour->description }}</td>
-                    <td>{{ $tour->direction_id }}</td>
+                    <td>{{ $tour->direction->name }}</td>
                     <td>{{ $tour->type }}</td>
                     <td>{{ $tour->price }}</td>
                 </tr>

@@ -132,6 +132,7 @@ a {
 .alert {
     color: rgb(184, 73, 61);
     background: rgb(226, 188, 184);
+    border: rgb(184, 73, 61);
 }
 
 .btn {
@@ -168,7 +169,6 @@ a {
     }
 }
 
-
 .breadcrumb {
     display: flex;
     flex-wrap: wrap;
@@ -191,17 +191,6 @@ a {
 .breadcrumb-item a {
     color: #29888d;
     text-decoration: none;
-    transition: text-decoration 0.2s;
-}
-
-.breadcrumb-item a:hover {
     text-decoration: underline;
 }
-
-.breadcrumb-item.active {
-    color: #50a1a5;
-    pointer-events: none;
-    text-decoration: none;
-}
-
 
